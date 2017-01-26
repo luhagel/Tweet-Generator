@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+python_quote.py	practice/python_quote.py	1;"	kind:file	line:1
+quote	practice/python_quote.py	/^  quote = random_quote()$/;"	kind:variable	line:12
+quotes	practice/python_quote.py	/^quotes = ("It's just  a flesh wound",$/;"	kind:variable	line:3
+random	practice/python_quote.py	/^import random$/;"	kind:namespace	line:1
+random	practice/reordering.py	/^import random$/;"	kind:namespace	line:1
+random_quote	practice/python_quote.py	/^def random_quote():$/;"	kind:function	line:7
+reorder_args	practice/reordering.py	/^def reorder_args():$/;"	kind:function	line:4
+reordering.py	practice/reordering.py	1;"	kind:file	line:1
+sys	practice/reordering.py	/^import sys$/;"	kind:namespace	line:2

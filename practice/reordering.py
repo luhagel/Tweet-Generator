@@ -1,11 +1,17 @@
+"""Tweet Gen Challenges page 1"""
 import random
 import sys
 
 def reorder_args():
-  args = []
-  for arg in range(1, len(sys.argv) - 1):
-    args += sys.argv[arg]
-  return args
+    """reorder the arguments passed to the script"""
+    args = []
+    for arg in sys.argv:
+        args += [arg]
+    del args[0]
+
+    random.shuffle(args)
+
+    return args
 
 if __name__ == '__main__':
-  print(reorder_args())
+    print reorder_args()

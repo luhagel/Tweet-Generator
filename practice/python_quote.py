@@ -1,13 +1,15 @@
+"""outputs a random monty python quote"""
 import random
 
-quotes = ("It's just  a flesh wound",
+QUOTES = ("It's just  a flesh wound",
           "He's not the Messiah. He's a very naughty boy!",
           "THIS IS AN EX-PARROT!!")
 
 def random_quote():
-  rand_index = random.randint(0, len(quotes) - 1)
-  return quotes[rand_index]
+    """generate random index and return the corresponding quote"""
+    rand_index = random.randint(0, len(QUOTES) - 1)
+    return QUOTES[rand_index]
 
 if __name__ == '__main__':
-  quote = random_quote()
-  print quote
+    QUOTE = random_quote()
+    print QUOTE
