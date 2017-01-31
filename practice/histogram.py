@@ -11,5 +11,11 @@ def generate_histogram(text):
             histogram[word] = 1
     return histogram
 
+def unique_words(histogram):
+    """takes a histgram and return the number of unique words"""
+    return len(histogram)
+
 if __name__ == '__main__':
-    print generate_histogram("one fish two fish red fish blue fish")
+    FISH = generate_histogram("one fish two fish red fish blue fish")
+    print FISH
+    print unique_words(FISH)
