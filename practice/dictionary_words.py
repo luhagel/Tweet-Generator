@@ -9,7 +9,7 @@ def get_words():
     """populates the words array"""
     words = []
     for line in fileinput.input(['/usr/share/dict/words']):
-        words += [line]
+        words.append(line)
     return words
 
 def generate_sentence(words, length):
