@@ -7,8 +7,9 @@ import fileinput
 def get_words():
     """populates the words array"""
     words = []
-    for line in fileinput.input(['/usr/share/dict/words']):
-        words.append(line)
+    for line in fileinput.input(['./input.txt']):
+        for word in line.split(' '):
+            words.append(word)
     return words
 
 
