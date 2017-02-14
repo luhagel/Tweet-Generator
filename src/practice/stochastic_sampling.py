@@ -31,19 +31,22 @@ def get_frequency(arr):
         print  key + ' -> ' + str(hist[key] / float(len(arr)))
 
 def get_words_count(dict):
+    """returns the wordcount in a histogramm"""
     count = 0
     for key in dict:
         count += dict[key]
     return count
 
 def pick_weighted_random_word(dict):
-    index = random.randint(0, WORDS_COUNT)
+    """takes a histogram and returns a random word, weighted by the frequency"""
+    index = random.randint(1, WORDS_COUNT)
     count = 0
     for key in dict:
         count += dict[key]
         if count >= index:
-            return key    
+            return key
 
+# -----MAIN-----
 
 if __name__ == '__main__':
     WORDS = []

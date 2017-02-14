@@ -201,7 +201,7 @@ Error	venv/lib/python2.7/locale.py	/^    Error = ValueError$/;"	kind:variable	li
 FAILURE	venv/lib/python2.7/sre_constants.py	/^FAILURE = "failure"$/;"	kind:variable	line:32
 FLAGS	venv/lib/python2.7/sre_parse.py	/^FLAGS = {$/;"	kind:variable	line:53
 FileType	venv/lib/python2.7/types.py	/^FileType = file$/;"	kind:variable	line:63
-Flask	main.py	/^from flask import Flask$/;"	kind:namespace	line:1
+Flask	src/server.py	/^from flask import Flask$/;"	kind:namespace	line:1
 FloatType	venv/lib/python2.7/types.py	/^FloatType = float$/;"	kind:variable	line:18
 FrameType	venv/lib/python2.7/types.py	/^    FrameType = type(tb.tb_frame)$/;"	kind:variable	line:71
 FunctionType	venv/lib/python2.7/types.py	/^FunctionType = type(_f)$/;"	kind:variable	line:43
@@ -214,8 +214,8 @@ HEXDIGITS	venv/lib/python2.7/sre_parse.py	/^HEXDIGITS = set("0123456789abcdefABC
 Hashable	venv/lib/python2.7/_abcoll.py	/^class Hashable:$/;"	kind:class	line:32
 IN	venv/lib/python2.7/sre_constants.py	/^IN = "in"$/;"	kind:variable	line:48
 INFO	venv/lib/python2.7/sre_constants.py	/^INFO = "info"$/;"	kind:variable	line:50
-INPUT_HISTOGRAM	practice/stochastic_sampling.py	/^    INPUT_HISTOGRAM = generate_histogram(INPUT_TEXT)$/;"	kind:variable	line:53
-INPUT_TEXT	practice/stochastic_sampling.py	/^    INPUT_TEXT = ' '.join(sys.argv[1:])$/;"	kind:variable	line:52
+INPUT_HISTOGRAM	src/practice/stochastic_sampling.py	/^    INPUT_HISTOGRAM = generate_histogram(INPUT_TEXT)$/;"	kind:variable	line:56
+INPUT_TEXT	src/practice/stochastic_sampling.py	/^    INPUT_TEXT = ' '.join(sys.argv[1:])$/;"	kind:variable	line:55
 IN_IGNORE	venv/lib/python2.7/sre_constants.py	/^IN_IGNORE = "in_ignore"$/;"	kind:variable	line:49
 IncrementalDecoder	venv/lib/python2.7/codecs.py	/^class IncrementalDecoder(object):$/;"	kind:class	line:247
 IncrementalDecoder	venv/lib/python2.7/encodings/ascii.py	/^class IncrementalDecoder(codecs.IncrementalDecoder):$/;"	kind:class	line:24
@@ -507,8 +507,8 @@ OP_IGNORE	venv/lib/python2.7/sre_constants.py	/^OP_IGNORE = {$/;"	kind:variable	
 ObjectType	venv/lib/python2.7/types.py	/^ObjectType = object$/;"	kind:variable	line:14
 PREFIXES	venv/lib/python2.7/site.py	/^PREFIXES = [sys.prefix, sys.exec_prefix]$/;"	kind:variable	line:78
 Pattern	venv/lib/python2.7/sre_parse.py	/^class Pattern:$/;"	kind:class	line:65
-QUOTE	practice/python_quote.py	/^    QUOTE = random_quote()$/;"	kind:variable	line:14
-QUOTES	practice/python_quote.py	/^QUOTES = ("It's just  a flesh wound",$/;"	kind:variable	line:4
+QUOTE	src/practice/python_quote.py	/^    QUOTE = random_quote()$/;"	kind:variable	line:14
+QUOTES	src/practice/python_quote.py	/^QUOTES = ("It's just  a flesh wound",$/;"	kind:variable	line:4
 Quitter	venv/lib/python2.7/site.py	/^    class Quitter(object):$/;"	kind:class	line:391
 RANGE	venv/lib/python2.7/sre_constants.py	/^RANGE = "range"$/;"	kind:variable	line:62
 REPEAT	venv/lib/python2.7/sre_constants.py	/^REPEAT = "repeat"$/;"	kind:variable	line:63
@@ -534,7 +534,7 @@ SRE_FLAG_VERBOSE	venv/lib/python2.7/sre_constants.py	/^SRE_FLAG_VERBOSE = 64 # i
 SRE_INFO_CHARSET	venv/lib/python2.7/sre_constants.py	/^SRE_INFO_CHARSET = 4 # pattern starts with character from given set$/;"	kind:variable	line:219
 SRE_INFO_LITERAL	venv/lib/python2.7/sre_constants.py	/^SRE_INFO_LITERAL = 2 # entire pattern is literal (given by prefix)$/;"	kind:variable	line:218
 SRE_INFO_PREFIX	venv/lib/python2.7/sre_constants.py	/^SRE_INFO_PREFIX = 1 # has prefix$/;"	kind:variable	line:217
-START_TIME	practice/dictionary_words.py	/^START_TIME = datetime.now()$/;"	kind:variable	line:6
+START_TIME	src/practice/dictionary_words.py	/^START_TIME = datetime.now()$/;"	kind:variable	line:6
 STRING_TYPES	venv/lib/python2.7/sre_compile.py	/^    STRING_TYPES = (type(""), type(unicode("")))$/;"	kind:variable	line:544
 STRING_TYPES	venv/lib/python2.7/sre_compile.py	/^    STRING_TYPES = (type(""),)$/;"	kind:variable	line:542
 ST_ATIME	venv/lib/python2.7/stat.py	/^ST_ATIME = 7$/;"	kind:variable	line:15
@@ -862,12 +862,14 @@ UserDict	venv/lib/python2.7/UserDict.py	/^class UserDict:$/;"	kind:class	line:3
 UserDict	venv/lib/python2.7/os.py	/^    import UserDict$/;"	kind:namespace	line:400
 UserDict.py	venv/lib/python2.7/UserDict.py	1;"	kind:file	line:1
 ValuesView	venv/lib/python2.7/_abcoll.py	/^class ValuesView(MappingView):$/;"	kind:class	line:479
-WEIGHTED_WORDS	practice/stochastic_sampling.py	/^    WEIGHTED_WORDS = []$/;"	kind:variable	line:50
+WEIGHTED_WORDS	src/practice/stochastic_sampling.py	/^    WEIGHTED_WORDS = []$/;"	kind:variable	line:53
 WHITESPACE	venv/lib/python2.7/sre_parse.py	/^WHITESPACE = set(" \\t\\n\\r\\v\\f")$/;"	kind:variable	line:27
-WORDS	practice/dictionary_words.py	/^    WORDS = get_words()$/;"	kind:variable	line:25
-WORDS	practice/stochastic_sampling.py	/^    WORDS = []$/;"	kind:variable	line:49
-WORDS_COUNT	practice/stochastic_sampling.py	/^    WORDS_COUNT = get_words_count(INPUT_HISTOGRAM)$/;"	kind:variable	line:54
-WORDS_COUNT	practice/stochastic_sampling.py	/^WORDS_COUNT = 0$/;"	kind:variable	line:18
+WORDS	src/modules/sentences.py	/^    WORDS = get_words()$/;"	kind:variable	line:26
+WORDS	src/practice/dictionary_words.py	/^    WORDS = get_words()$/;"	kind:variable	line:25
+WORDS	src/practice/stochastic_sampling.py	/^    WORDS = []$/;"	kind:variable	line:52
+WORDS	src/server.py	/^WORDS = sentences.get_words()$/;"	kind:variable	line:5
+WORDS_COUNT	src/practice/stochastic_sampling.py	/^    WORDS_COUNT = get_words_count(INPUT_HISTOGRAM)$/;"	kind:variable	line:57
+WORDS_COUNT	src/practice/stochastic_sampling.py	/^WORDS_COUNT = 0$/;"	kind:variable	line:18
 WarningMessage	venv/lib/python2.7/warnings.py	/^class WarningMessage(object):$/;"	kind:class	line:303
 WeakSet	venv/lib/python2.7/_weakrefset.py	/^class WeakSet(object):$/;"	kind:class	line:35
 WeakSet	venv/lib/python2.7/abc.py	/^from _weakrefset import WeakSet$/;"	kind:namespace	line:8
@@ -1282,7 +1284,8 @@ altsep	venv/lib/python2.7/ntpath.py	/^    altsep = '\/'$/;"	kind:variable	line:3
 altsep	venv/lib/python2.7/ntpath.py	/^altsep = '\/'$/;"	kind:variable	line:30
 altsep	venv/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, pathsep, defpath, extsep, altsep,$/;"	kind:namespace	line:120
 altsep	venv/lib/python2.7/posixpath.py	/^altsep = None$/;"	kind:variable	line:36
-app	main.py	/^app = Flask(__name__)$/;"	kind:variable	line:2
+app	src/server.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
+app.py	src/app.py	1;"	kind:file	line:1
 append	venv/lib/python2.7/_abcoll.py	/^    def append(self, value):$/;"	kind:member	line:662
 append	venv/lib/python2.7/sre_parse.py	/^    def append(self, code):$/;"	kind:member	line:149
 array	venv/lib/python2.7/sre_compile.py	/^    import array$/;"	kind:namespace	line:418
@@ -1629,7 +1632,7 @@ curdir	venv/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, path
 curdir	venv/lib/python2.7/posixpath.py	/^curdir = '.'$/;"	kind:variable	line:30
 currency	venv/lib/python2.7/locale.py	/^def currency(val, symbol=True, grouping=False, international=False):$/;"	kind:function	line:258
 data_encoding	venv/lib/python2.7/codecs.py	/^    data_encoding = 'unknown'$/;"	kind:variable	line:758
-datetime	practice/dictionary_words.py	/^from datetime import datetime$/;"	kind:namespace	line:5
+datetime	src/practice/dictionary_words.py	/^from datetime import datetime$/;"	kind:namespace	line:5
 decode	venv/lib/python2.7/codecs.py	/^    def decode(self, input, errors='strict'):$/;"	kind:member	line:151
 decode	venv/lib/python2.7/codecs.py	/^    def decode(self, input, errors='strict'):$/;"	kind:member	line:439
 decode	venv/lib/python2.7/codecs.py	/^    def decode(self, input, final=False):$/;"	kind:member	line:263
@@ -1943,7 +1946,7 @@ defpath	venv/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, pat
 defpath	venv/lib/python2.7/posixpath.py	/^defpath = ':\/bin:\/usr\/bin'$/;"	kind:variable	line:35
 devnull	venv/lib/python2.7/ntpath.py	/^devnull = 'nul'$/;"	kind:variable	line:37
 devnull	venv/lib/python2.7/posixpath.py	/^devnull = '\/dev\/null'$/;"	kind:variable	line:37
-dictionary_words.py	practice/dictionary_words.py	1;"	kind:file	line:1
+dictionary_words.py	src/practice/dictionary_words.py	1;"	kind:file	line:1
 difference	venv/lib/python2.7/_weakrefset.py	/^    def difference(self, other):$/;"	kind:member	line:128
 difference_update	venv/lib/python2.7/_weakrefset.py	/^    def difference_update(self, other):$/;"	kind:member	line:134
 digits	venv/lib/python2.7/encodings/punycode.py	/^digits = "abcdefghijklmnopqrstuvwxyz0123456789"$/;"	kind:variable	line:79
@@ -2290,7 +2293,8 @@ extsep	venv/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, path
 extsep	venv/lib/python2.7/posixpath.py	/^extsep = '.'$/;"	kind:variable	line:32
 f	venv/lib/python2.7/sre_constants.py	/^    f = open("sre_constants.h", "w")$/;"	kind:variable	line:227
 file_encoding	venv/lib/python2.7/codecs.py	/^    file_encoding = 'unknown'$/;"	kind:variable	line:759
-fileinput	practice/dictionary_words.py	/^import fileinput$/;"	kind:namespace	line:4
+fileinput	src/modules/sentences.py	/^import fileinput$/;"	kind:namespace	line:4
+fileinput	src/practice/dictionary_words.py	/^import fileinput$/;"	kind:namespace	line:4
 filter	venv/lib/python2.7/fnmatch.py	/^def filter(names, pat):$/;"	kind:function	line:45
 filter	venv/lib/python2.7/re.py	/^    def filter(match, template=template):$/;"	kind:function	line:290
 filters	venv/lib/python2.7/warnings.py	/^    filters = []$/;"	kind:variable	line:400
@@ -2310,17 +2314,20 @@ force_global_eggs_after_local_site_packages	venv/lib/python2.7/site.py	/^def for
 format	venv/lib/python2.7/locale.py	/^def format(percent, value, grouping=False, monetary=False, *additional):$/;"	kind:function	line:187
 format_string	venv/lib/python2.7/locale.py	/^def format_string(f, val, grouping=False):$/;"	kind:function	line:224
 formatwarning	venv/lib/python2.7/warnings.py	/^def formatwarning(message, category, filename, lineno, line=None):$/;"	kind:function	line:40
-frequency	practice/histogram.py	/^def frequency(histogram, word):$/;"	kind:function	line:18
+frequency	src/modules/histogram.py	/^def frequency(histogram, word):$/;"	kind:function	line:19
+frequency	src/practice/histogram.py	/^def frequency(histogram, word):$/;"	kind:function	line:18
 fromkeys	venv/lib/python2.7/UserDict.py	/^    def fromkeys(cls, iterable, value=None):$/;"	kind:member	line:106
 functools	venv/lib/python2.7/locale.py	/^import functools$/;"	kind:namespace	line:17
 gb18030.py	venv/lib/python2.7/encodings/gb18030.py	1;"	kind:file	line:1
 gb2312.py	venv/lib/python2.7/encodings/gb2312.py	1;"	kind:file	line:1
 gbk.py	venv/lib/python2.7/encodings/gbk.py	1;"	kind:file	line:1
 generate_generalized_integer	venv/lib/python2.7/encodings/punycode.py	/^def generate_generalized_integer(N, bias):$/;"	kind:function	line:80
-generate_histogram	practice/histogram.py	/^def generate_histogram(text):$/;"	kind:function	line:3
-generate_histogram	practice/stochastic_sampling.py	/^def generate_histogram(text):$/;"	kind:function	line:5
+generate_histogram	src/modules/histogram.py	/^def generate_histogram(text):$/;"	kind:function	line:4
+generate_histogram	src/practice/histogram.py	/^def generate_histogram(text):$/;"	kind:function	line:3
+generate_histogram	src/practice/stochastic_sampling.py	/^def generate_histogram(text):$/;"	kind:function	line:5
 generate_integers	venv/lib/python2.7/encodings/punycode.py	/^def generate_integers(baselen, deltas):$/;"	kind:function	line:108
-generate_sentence	practice/dictionary_words.py	/^def generate_sentence(words, length):$/;"	kind:function	line:15
+generate_sentence	src/modules/sentences.py	/^def generate_sentence(words, length):$/;"	kind:function	line:16
+generate_sentence	src/practice/dictionary_words.py	/^def generate_sentence(words, length):$/;"	kind:function	line:15
 genericpath	venv/lib/python2.7/ntpath.py	/^import genericpath$/;"	kind:namespace	line:11
 genericpath	venv/lib/python2.7/posixpath.py	/^import genericpath$/;"	kind:namespace	line:16
 genericpath.py	venv/lib/python2.7/genericpath.py	1;"	kind:file	line:1
@@ -2329,10 +2336,11 @@ get	venv/lib/python2.7/UserDict.py	/^    def get(self, key, failobj=None):$/;"	k
 get	venv/lib/python2.7/_abcoll.py	/^    def get(self, key, default=None):$/;"	kind:member	line:379
 get	venv/lib/python2.7/os.py	/^            def get(self, key, failobj=None):$/;"	kind:member	line:446
 get	venv/lib/python2.7/sre_parse.py	/^    def get(self):$/;"	kind:member	line:212
-get_frequency	practice/stochastic_sampling.py	/^def get_frequency(arr):$/;"	kind:function	line:26
+get_frequency	src/practice/stochastic_sampling.py	/^def get_frequency(arr):$/;"	kind:function	line:26
 get_platform	venv/lib/python2.7/site.py	/^    from distutils.util import get_platform$/;"	kind:namespace	line:136
-get_words	practice/dictionary_words.py	/^def get_words():$/;"	kind:function	line:8
-get_words_count	practice/stochastic_sampling.py	/^def get_words_count(dict):$/;"	kind:function	line:33
+get_words	src/modules/sentences.py	/^def get_words():$/;"	kind:function	line:7
+get_words	src/practice/dictionary_words.py	/^def get_words():$/;"	kind:function	line:8
+get_words_count	src/practice/stochastic_sampling.py	/^def get_words_count(dict):$/;"	kind:function	line:33
 getatime	venv/lib/python2.7/genericpath.py	/^def getatime(filename):$/;"	kind:function	line:65
 getctime	venv/lib/python2.7/genericpath.py	/^def getctime(filename):$/;"	kind:function	line:70
 getdecoder	venv/lib/python2.7/codecs.py	/^def getdecoder(encoding):$/;"	kind:function	line:953
@@ -2485,11 +2493,11 @@ getwriter	venv/lib/python2.7/codecs.py	/^def getwriter(encoding):$/;"	kind:funct
 has_key	venv/lib/python2.7/UserDict.py	/^    def has_key(self, key): return key in self.data$/;"	kind:member	line:62
 has_key	venv/lib/python2.7/UserDict.py	/^    def has_key(self, key):$/;"	kind:member	line:132
 has_key	venv/lib/python2.7/os.py	/^            def has_key(self, key):$/;"	kind:member	line:442
-hello_world	main.py	/^def hello_world():$/;"	kind:function	line:6
 hex_codec.py	venv/lib/python2.7/encodings/hex_codec.py	1;"	kind:file	line:1
 hex_decode	venv/lib/python2.7/encodings/hex_codec.py	/^def hex_decode(input,errors='strict'):$/;"	kind:function	line:27
 hex_encode	venv/lib/python2.7/encodings/hex_codec.py	/^def hex_encode(input,errors='strict'):$/;"	kind:function	line:13
-histogram.py	practice/histogram.py	1;"	kind:file	line:1
+histogram.py	src/modules/histogram.py	1;"	kind:file	line:1
+histogram.py	src/practice/histogram.py	1;"	kind:file	line:1
 hp_roman8.py	venv/lib/python2.7/encodings/hp_roman8.py	1;"	kind:file	line:1
 hz.py	venv/lib/python2.7/encodings/hz.py	1;"	kind:file	line:1
 idna.py	venv/lib/python2.7/encodings/idna.py	1;"	kind:file	line:1
@@ -2596,7 +2604,6 @@ mac_roman.py	venv/lib/python2.7/encodings/mac_roman.py	1;"	kind:file	line:1
 mac_romanian.py	venv/lib/python2.7/encodings/mac_romanian.py	1;"	kind:file	line:1
 mac_turkish.py	venv/lib/python2.7/encodings/mac_turkish.py	1;"	kind:file	line:1
 main	venv/lib/python2.7/site.py	/^def main():$/;"	kind:function	line:668
-main.py	main.py	1;"	kind:file	line:1
 make_encoding_map	venv/lib/python2.7/codecs.py	/^def make_encoding_map(decoding_map):$/;"	kind:function	line:1062
 make_identity_dict	venv/lib/python2.7/codecs.py	/^def make_identity_dict(rng):$/;"	kind:function	line:1049
 makedict	venv/lib/python2.7/sre_constants.py	/^def makedict(list):$/;"	kind:function	line:149
@@ -2698,8 +2705,8 @@ path	venv/lib/python2.7/os.py	/^    import riscospath as path$/;"	kind:namespace
 pathsep	venv/lib/python2.7/ntpath.py	/^pathsep = ';'$/;"	kind:variable	line:29
 pathsep	venv/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, pathsep, defpath, extsep, altsep,$/;"	kind:namespace	line:120
 pathsep	venv/lib/python2.7/posixpath.py	/^pathsep = ':'$/;"	kind:variable	line:34
-pick_random_word	practice/stochastic_sampling.py	/^def pick_random_word(arr):$/;"	kind:function	line:20
-pick_weighted_random_word	practice/stochastic_sampling.py	/^def pick_weighted_random_word(dict):$/;"	kind:function	line:39
+pick_random_word	src/practice/stochastic_sampling.py	/^def pick_random_word(arr):$/;"	kind:function	line:20
+pick_weighted_random_word	src/practice/stochastic_sampling.py	/^def pick_weighted_random_word(dict):$/;"	kind:function	line:40
 pickle	venv/lib/python2.7/copy_reg.py	/^def pickle(ob_type, pickle_function, constructor_ob=None):$/;"	kind:function	line:14
 pickle_complex	venv/lib/python2.7/copy_reg.py	/^    def pickle_complex(c):$/;"	kind:function	line:39
 pop	venv/lib/python2.7/UserDict.py	/^    def pop(self, key, *args):$/;"	kind:member	line:165
@@ -2729,17 +2736,19 @@ pwd	venv/lib/python2.7/posixpath.py	/^            import pwd$/;"	kind:namespace	
 pwd	venv/lib/python2.7/posixpath.py	/^        import pwd$/;"	kind:namespace	line:266
 pydoc	venv/lib/python2.7/site.py	/^        import pydoc$/;"	kind:namespace	line:504
 python-config	venv/bin/python-config	1;"	kind:file	line:1
-python_quote.py	practice/python_quote.py	1;"	kind:file	line:1
+python_quote.py	src/practice/python_quote.py	1;"	kind:file	line:1
 pyver	venv/bin/python-config	/^pyver = sysconfig.get_config_var('VERSION')$/;"	kind:variable	line:30
 quopri	venv/lib/python2.7/encodings/quopri_codec.py	/^import codecs, quopri$/;"	kind:namespace	line:6
 quopri_codec.py	venv/lib/python2.7/encodings/quopri_codec.py	1;"	kind:file	line:1
 quopri_decode	venv/lib/python2.7/encodings/quopri_codec.py	/^def quopri_decode(input, errors='strict'):$/;"	kind:function	line:28
 quopri_encode	venv/lib/python2.7/encodings/quopri_codec.py	/^def quopri_encode(input, errors='strict'):$/;"	kind:function	line:12
-random	practice/dictionary_words.py	/^import random$/;"	kind:namespace	line:3
-random	practice/python_quote.py	/^import random$/;"	kind:namespace	line:2
-random	practice/reordering.py	/^import random$/;"	kind:namespace	line:2
-random	practice/stochastic_sampling.py	/^import random$/;"	kind:namespace	line:3
-random_quote	practice/python_quote.py	/^def random_quote():$/;"	kind:function	line:8
+random	src/modules/sentences.py	/^import random$/;"	kind:namespace	line:3
+random	src/practice/dictionary_words.py	/^import random$/;"	kind:namespace	line:3
+random	src/practice/python_quote.py	/^import random$/;"	kind:namespace	line:2
+random	src/practice/reordering.py	/^import random$/;"	kind:namespace	line:2
+random	src/practice/stochastic_sampling.py	/^import random$/;"	kind:namespace	line:3
+random_quote	src/practice/python_quote.py	/^def random_quote():$/;"	kind:function	line:8
+random_sentecne	src/server.py	/^def random_sentecne():$/;"	kind:function	line:8
 raw_unicode_escape.py	venv/lib/python2.7/encodings/raw_unicode_escape.py	1;"	kind:file	line:1
 re	venv/lib/python2.7/encodings/idna.py	/^import stringprep, re, codecs$/;"	kind:namespace	line:3
 re	venv/lib/python2.7/fnmatch.py	/^import re$/;"	kind:namespace	line:13
@@ -2774,8 +2783,8 @@ remove_extension	venv/lib/python2.7/copy_reg.py	/^def remove_extension(module, n
 removedirs	venv/lib/python2.7/os.py	/^def removedirs(name):$/;"	kind:function	line:159
 removeduppaths	venv/lib/python2.7/site.py	/^def removeduppaths():$/;"	kind:function	line:113
 renames	venv/lib/python2.7/os.py	/^def renames(old, new):$/;"	kind:function	line:181
-reorder_args	practice/reordering.py	/^def reorder_args():$/;"	kind:function	line:5
-reordering.py	practice/reordering.py	1;"	kind:file	line:1
+reorder_args	src/practice/reordering.py	/^def reorder_args():$/;"	kind:function	line:5
+reordering.py	src/practice/reordering.py	1;"	kind:file	line:1
 replace_errors	venv/lib/python2.7/codecs.py	/^    replace_errors = None$/;"	kind:variable	line:1095
 replace_errors	venv/lib/python2.7/codecs.py	/^    replace_errors = lookup_error("replace")$/;"	kind:variable	line:1088
 reset	venv/lib/python2.7/codecs.py	/^    def reset(self):$/;"	kind:member	line:197
@@ -2821,9 +2830,12 @@ seek	venv/lib/python2.7/sre_parse.py	/^    def seek(self, index):$/;"	kind:membe
 segregate	venv/lib/python2.7/encodings/punycode.py	/^def segregate(str):$/;"	kind:function	line:11
 selective_find	venv/lib/python2.7/encodings/punycode.py	/^def selective_find(str, char, index, pos):$/;"	kind:function	line:32
 selective_len	venv/lib/python2.7/encodings/punycode.py	/^def selective_len(str, max):$/;"	kind:function	line:24
+sentences	src/server.py	/^import sentences$/;"	kind:namespace	line:2
+sentences.py	src/modules/sentences.py	1;"	kind:file	line:1
 sep	venv/lib/python2.7/ntpath.py	/^sep = '\\\\'$/;"	kind:variable	line:28
 sep	venv/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, pathsep, defpath, extsep, altsep,$/;"	kind:namespace	line:120
 sep	venv/lib/python2.7/posixpath.py	/^sep = '\/'$/;"	kind:variable	line:33
+server.py	src/server.py	1;"	kind:file	line:1
 set	venv/lib/python2.7/site.py	/^    from sets import Set as set$/;"	kind:namespace	line:75
 setBEGINLIBPATH	venv/lib/python2.7/site.py	/^def setBEGINLIBPATH():$/;"	kind:function	line:362
 setcopyright	venv/lib/python2.7/site.py	/^def setcopyright():$/;"	kind:function	line:472
@@ -2884,7 +2896,7 @@ stat	venv/lib/python2.7/ntpath.py	/^import stat$/;"	kind:namespace	line:10
 stat	venv/lib/python2.7/posixpath.py	/^import stat$/;"	kind:namespace	line:15
 stat.py	venv/lib/python2.7/stat.py	1;"	kind:file	line:1
 stdlib	venv/lib/python2.7/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	kind:namespace	line:5
-stochastic_sampling.py	practice/stochastic_sampling.py	1;"	kind:file	line:1
+stochastic_sampling.py	src/practice/stochastic_sampling.py	1;"	kind:file	line:1
 str	venv/lib/python2.7/locale.py	/^def str(val):$/;"	kind:function	line:303
 strcoll	venv/lib/python2.7/locale.py	/^    def strcoll(a,b):$/;"	kind:function	line:93
 strict_errors	venv/lib/python2.7/codecs.py	/^    strict_errors = None$/;"	kind:variable	line:1093
@@ -2892,6 +2904,7 @@ strict_errors	venv/lib/python2.7/codecs.py	/^    strict_errors = lookup_error("s
 string	venv/lib/python2.7/ntpath.py	/^    import string$/;"	kind:namespace	line:333
 string_escape.py	venv/lib/python2.7/encodings/string_escape.py	1;"	kind:file	line:1
 stringprep	venv/lib/python2.7/encodings/idna.py	/^import stringprep, re, codecs$/;"	kind:namespace	line:3
+strip_words.py	src/modules/strip_words.py	1;"	kind:file	line:1
 strxfrm	venv/lib/python2.7/locale.py	/^    def strxfrm(s):$/;"	kind:function	line:99
 sub	venv/lib/python2.7/re.py	/^def sub(pattern, repl, string, count=0, flags=0):$/;"	kind:function	line:148
 subn	venv/lib/python2.7/re.py	/^def subn(pattern, repl, string, count=0, flags=0):$/;"	kind:function	line:157
@@ -2902,9 +2915,10 @@ supports_unicode_filenames	venv/lib/python2.7/ntpath.py	/^supports_unicode_filen
 supports_unicode_filenames	venv/lib/python2.7/posixpath.py	/^supports_unicode_filenames = (sys.platform == 'darwin')$/;"	kind:variable	line:422
 symmetric_difference	venv/lib/python2.7/_weakrefset.py	/^    def symmetric_difference(self, other):$/;"	kind:member	line:182
 symmetric_difference_update	venv/lib/python2.7/_weakrefset.py	/^    def symmetric_difference_update(self, other):$/;"	kind:member	line:188
-sys	practice/dictionary_words.py	/^import sys$/;"	kind:namespace	line:2
-sys	practice/reordering.py	/^import sys$/;"	kind:namespace	line:3
-sys	practice/stochastic_sampling.py	/^import sys$/;"	kind:namespace	line:2
+sys	src/modules/sentences.py	/^import sys$/;"	kind:namespace	line:2
+sys	src/practice/dictionary_words.py	/^import sys$/;"	kind:namespace	line:2
+sys	src/practice/reordering.py	/^import sys$/;"	kind:namespace	line:3
+sys	src/practice/stochastic_sampling.py	/^import sys$/;"	kind:namespace	line:2
 sys	venv/bin/activate_this.py	/^import sys$/;"	kind:namespace	line:13
 sys	venv/bin/python-config	/^import sys$/;"	kind:namespace	line:3
 sys	venv/lib/python2.7/_abcoll.py	/^import sys$/;"	kind:namespace	line:12
@@ -2950,7 +2964,8 @@ unicode_escape.py	venv/lib/python2.7/encodings/unicode_escape.py	1;"	kind:file	l
 unicode_internal.py	venv/lib/python2.7/encodings/unicode_internal.py	1;"	kind:file	line:1
 unicodedata	venv/lib/python2.7/encodings/idna.py	/^from unicodedata import ucd_3_2_0 as unicodedata$/;"	kind:namespace	line:4
 union	venv/lib/python2.7/_weakrefset.py	/^    def union(self, other):$/;"	kind:member	line:199
-unique_words	practice/histogram.py	/^def unique_words(histogram):$/;"	kind:function	line:14
+unique_words	src/modules/histogram.py	/^def unique_words(histogram):$/;"	kind:function	line:15
+unique_words	src/practice/histogram.py	/^def unique_words(histogram):$/;"	kind:function	line:14
 unsetenv	venv/lib/python2.7/os.py	/^        def unsetenv(key):$/;"	kind:function	line:407
 update	venv/lib/python2.7/UserDict.py	/^    def update(*args, **kwargs):$/;"	kind:member	line:63
 update	venv/lib/python2.7/UserDict.py	/^    def update(self, other=None, **kwargs):$/;"	kind:member	line:184
