@@ -1,3 +1,5 @@
+
+"""histograms"""
 class Dictogram(dict):
 
     def __init__(self, iterable=None):
