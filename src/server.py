@@ -1,10 +1,15 @@
 from flask import Flask
-import sentences
+from modules import sentences
+from modules import tokenization
+
 app = Flask(__name__)
 
-WORDS = sentences.get_words()
+WORDS = tokenization.get_tokens_from_corpus('src/input.txt')
 
 @app.route('/')
-def random_sentecne():
+def random_sentence():
 
     return sentences.generate_sentence(WORDS, 10)
+
+if __name__ == "__main__":
+    app.run()

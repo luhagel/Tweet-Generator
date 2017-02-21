@@ -1,10 +1,10 @@
 
 """histograms"""
-class Dictogram(dict):
+class Histogram(dict):
 
     def __init__(self, iterable=None):
         """Initialize this histogram as a new dict; update with given items"""
-        super(Dictogram, self).__init__()
+        super(Histogram, self).__init__()
         self.types = 0  # the number of distinct item types in this histogram
         self.tokens = 0  # the total count of all item tokens in this histogram
         if iterable:
