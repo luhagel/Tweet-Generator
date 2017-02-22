@@ -45,18 +45,32 @@ class LinkedList(object):
 
     def length(self):
         """Return the length of this linked list by traversing its nodes"""
-        # TODO: count number of items
-        pass
+        current = self.head
+        count = 0
+        while current is not None:
+            count += 1
+            current = current.next
+        return count
 
     def append(self, item):
         """Insert the given item at the tail of this linked list"""
-        # TODO: append given item
-        pass
+        item_node = Node(item)
+        if self.tail is not None:
+            self.tail.next = item_node
+        if self.head is None:
+            self.head = item_node
+        self.tail = item_node
+
 
     def prepend(self, item):
         """Insert the given item at the head of this linked list"""
-        # TODO: prepend given item
-        pass
+        item_node = Node(item)
+        if self.head is None:
+            self.head = item_node
+            self.tail = item_node
+        else:
+            item_node.next = self.head
+            self.head = item_node
 
     def delete(self, item):
         """Delete the given item from this linked list, or raise ValueError"""
@@ -65,8 +79,11 @@ class LinkedList(object):
 
     def find(self, quality):
         """Return an item from this linked list satisfying the given quality"""
-        # TODO: find item where quality(item) is True
-        pass
+        current = self.head
+        while current is not None:
+            if quality(current.data):
+                return current.data
+        return None
 
 
 def test_linked_list():
