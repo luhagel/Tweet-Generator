@@ -1,5 +1,6 @@
 """tokenize corpus"""
 import string
+import yaml
 
 import modules.histogram
 
@@ -24,9 +25,11 @@ def trim_punctuation(raw_word_list):
 def get_raw_words_from_file(filename):
     """open supplied file and return a list of raw words"""
     with open(filename) as opened_file:
-        corpus = opened_file.read()
+        corpus = yaml.safe_load(opened_file)
+    word_list = []
+    for message in corpus:
+        word_list += message[":message"].split()
 
-    word_list = corpus.split()
     return word_list
 
 def get_tokens_from_corpus(filename):

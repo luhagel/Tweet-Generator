@@ -4,7 +4,7 @@ from modules import tokenization
 
 app = Flask(__name__)
 
-WORDS = tokenization.get_tokens_from_corpus('src/input.txt')
+WORDS = tokenization.get_tokens_from_corpus('src/corpus.yml')
 
 @app.route('/')
 def random_sentence():
